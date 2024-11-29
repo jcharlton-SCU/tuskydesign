@@ -1,3 +1,7 @@
+import { getRandomItem } from '@tuskdesign/util/src';
+
+// ...
+
 export const NAMES = [
   "Brie",
   "Vinnie",
@@ -95,10 +99,6 @@ export const NAMES = [
   "Fancy",
   "Howie",
 ];
-
-export function getRandomItem<T>(arr: T[]): T {
-  return arr[Math.floor(Math.random() * arr.length)];
-}
 
 export function getRandomName(): string {
   return getRandomItem(NAMES);
